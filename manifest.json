@@ -1,0 +1,12 @@
+{
+   "name": "NoBlockedMessage",
+   "version": "1.0.0",
+   "description": "Completely remove blocked messages from your chat view",
+   "authors": [
+      {
+         "name": "mafu",
+         "id": "519760564755365888"
+      }
+   ],
+   "color": "#f5deb3"
+}
