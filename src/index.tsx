@@ -10,13 +10,12 @@ import Settings from "./components/Settings"
 
 const Patcher = create('NoBlockedMessage')
 
-const RelationshipStore = getByProps("isBlocked", "getFriendIDs");
+const RelationshipStore = getByProps("isBlocked", "getFriendIDs")
 const [
     MessageStore
 ] = [
     getStoreHandlers("MessageStore")
 ]
-
 
 const NoBlockedMessage: Plugin = {
     ...manifest,

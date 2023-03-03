@@ -1,5 +1,4 @@
 import {FormRow, FormSwitch,FormSection, View, ScrollView, Image, Text} from 'enmity/components'
-import {SettingsStore} from 'enmity/api/settings'
 import {Constants, Navigation, React, StyleSheet} from 'enmity/metro/common'
 import {Linking} from "enmity/metro/common"
 // @ts-ignore
@@ -7,10 +6,6 @@ import {name, version} from '../../manifest.json'
 import {getIDByName} from "enmity/api/assets"
 import {getByProps} from "enmity/modules"
 import {reload} from "enmity/api/native"
-
-interface SettingsProps {
-    settings: SettingsStore
-}
 
 const ReloadIcon = getIDByName('ic_message_retry')
 const HideIcon = getIDByName('ic_hide')
@@ -20,7 +15,7 @@ const TwitterIcon = getIDByName('img_account_sync_twitter_white')
 
 const Invites = getByProps('acceptInviteAndTransitionToInviteChannel')
 
-export default ({settings}: SettingsProps) => {
+export default ({settings}) => {
     const styles = StyleSheet.createThemedStyleSheet({
         container: {
             flexDirection: "row",
