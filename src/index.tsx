@@ -3,7 +3,7 @@ import {React} from 'enmity/metro/common'
 import {create} from 'enmity/patcher'
 // @ts-ignore
 import manifest, {name as plugin_name} from '../manifest.json'
-import {getStoreHandlers} from "./utils/store"
+import {getStoreHandlers} from "../../hook"
 import {getByProps} from "enmity/modules"
 import {get} from "enmity/api/settings"
 import Settings from "./components/Settings"
